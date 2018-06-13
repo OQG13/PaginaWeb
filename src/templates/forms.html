@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load crispy_forms_tags %}
+{% load static %}
+<html lang="es-co">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="oqg" content="">
+
+    <title>Coffee Maze</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'css/css_.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/css_1.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/css_2.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/css_3.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/business-casual.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body <div class="grid-block" style="background-image: url('http://img.fenixzone.net/i/tHcNAPF.jpeg'); width: 100; height: 100; ">>
+
+    <h1 class="site-heading text-center text-white">
+      <span class="site-heading-upper text-primary mb-3">COFFEE MAZE</span>
+      <span class="site-heading-lower">Café Opita</span>
+    </h1>
+
+    <!-- Navigation -->
+{% include "navbar.html" %}
+
+    <section class="page-section about-heading">
+      <div class="container">
+      <div class="bg-faded p-5 d-flex ml-aut rounded">
+      <div class="row">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="mb-1">
+            <p class="text-align-center">{{titulo}}</p>
+            <form method="POST" action="" class="letra">{% csrf_token %}
+            {{ form|crispy}}
+            <input type='submit' class="btn btn-lg btn-primary" href="../../components/navbar/"value='Enviar'/>
+            </form>
+            </h2>
+          </div>
+          <div class="col-md-6 col-md-offset-6">
+            <div style="width: 425px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7973.805453629391!2d-75.62201499999999!3d2.1905391!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1522356411356" width="500" height="300" frameborder="0" style="border:0" align="right" allowfullscreen class="intro-img item mb-3 mb-lg-0 rounded"></iframe> 
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; OQG 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  </body>
+</html>

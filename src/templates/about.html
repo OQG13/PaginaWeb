@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="oqg" content="">
+
+    <title>Coffee Maze</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'css/css_.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/css_1.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/css_2.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/css_3.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/business-casual.min.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body <div class="grid-block" style="background-image: url('http://img.fenixzone.net/i/tHcNAPF.jpeg'); width: 100; height: 100; ">>
+
+    <h1 class="site-heading text-center text-white">
+      <span class="site-heading-upper text-primary mb-3">COFFEE MAZE</span>
+      <span class="site-heading-lower">Café Opita</span>
+    </h1>
+
+    <!-- Navigation -->
+{% include "navbar.html" %}
+
+    <section class="page-section about-heading">
+      <div class="container">
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'img/about.jpg' %}" alt="">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-lower">¿Quiénes Somos?</span>
+                </h2>
+                <p>Fundado en 2018 por los empresarios <em>Sergio Quiroga</em> y <em>Rocío Martínez</em>, nuestro establecimiento ha estado sirviendo café rico procedente de diversas regiones del Huila.</p>
+                <p class="mb-0">
+                  Le garantizamos que caerá en la <em>lujuria</em> con nuestras mezclas decadentes en el momento en que entra dentro hasta que termine su último sorbo. Únase a nosotros para su rutina diaria, una excursión con amigos, o simplemente para disfrutar de un tiempo a solas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; OQG 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+  </body>
+
+</html>
